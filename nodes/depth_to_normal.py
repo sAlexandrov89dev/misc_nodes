@@ -10,7 +10,7 @@ class DepthToNormal:
     def INPUT_TYPES(cls):
         return {"required": {
             "depth_map": ("IMAGE",),
-            "strength": ("FLOAT", {"default": 1.0, "min": 0.1, "max": 10000.0, "step": 0.5, "display": "number"}),
+            "strength": ("FLOAT", {"default": 1.0, "min": 0.1, "max": 1000.0, "step": 0.1, "display": "number"}),
             "invert_depth": ("BOOLEAN", {"default": False}),
         }}
 
